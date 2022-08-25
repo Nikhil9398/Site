@@ -1,0 +1,355 @@
+
+    *{
+        margin: 0%;
+    }
+    .full{
+        display:flex;
+        justify-content: flex-start;
+    }
+    .sidebar{
+        width:21%;
+        background-color: #32334a;
+        color:white;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+   
+   
+    ul{
+        list-style-type:none;
+        padding-left: 0%;
+        
+    }
+    .sidebar ul li{
+        padding:10%;
+        width:200px;
+        
+    }
+    
+    .sidebar ul li a{
+        color:white;
+        text-decoration: none;
+        display: flex;
+        align-items: middle;
+       
+        
+    }
+    .sidebar ul li:hover{
+        background-color:#373c4e;
+        width:79%;
+    }
+    .geeky{
+        text-align: center;
+        font-size: 30px;
+    }
+    .noti{
+        border-radius: 10px;
+        padding:0% 4% 0% 4%;
+        
+    }
+    .noti2{
+        font-size: 20px;
+    }
+    
+    .menubar{
+        background-color: #ecedf1;
+        padding-top: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .search{
+        border-radius: 20px;
+        border-style:none;
+        padding:3%;
+        font-size: 100%;
+    }
+    .symbol{
+        border-radius: 10px;
+        border-style:none;
+        width: 10%;
+    }
+    .profilepic{
+        width: 30px;
+        padding-top: 0px;
+        padding-bottom: 2%;
+    }
+    .opt1{
+        display:flex;
+        width:10%;
+        justify-content: space-evenly;
+    }
+    .opt2{
+        display:flex;
+        width:50%;
+        justify-content: space-evenly;
+    }
+    .dash{
+        float: left;
+        padding-left: 3%;
+        padding-top:3%;
+    }
+    .settings{
+        width:200px;
+        padding-top:3%;
+        padding-right: 3%;
+    }
+    .dashbu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .button2{
+        font-size: 17px;
+        padding:3% 7% 3% 7%; 
+        background-color: #616ed3; 
+        border-style:none;
+        color:white;
+        float:right;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 10rem;
+        grid-gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    .boxes .box{
+        background-color: #616ed3;
+        border-radius: 3%;
+        padding:1% 0% 1% 1%;
+        float:left;
+    }
+    .boxes div div{
+        display:flex;
+        justify-content: space-between;
+        padding-top: 3%;
+    }
+    .img{
+        width:25%;
+        padding-right: 0%;
+        padding-left: 3%;
+    }
+    .tabimg{
+        width: 80%;
+        border-radius: 50%;
+       float:left;
+    }
+    .deliver{
+        background-color: #27a599;
+        padding: 5%;
+        color:white;   
+    }
+    .bu5{
+        background-color: #6371de;
+        border-style:none;
+        border-radius: 5%;
+        color:white;
+    }
+    .imgcol{
+        margin: 0%;
+        padding: 0%;
+        width:1%;
+    }
+    table tr td,th {
+    border-bottom: 1px solid black;
+    }
+    .boxin{
+    color: #b0b5ea;  
+    font-size: 16px;  
+    position:absolute;
+    }
+    .boxin2{
+    color: white;
+    font-size: 20px;
+    }
+    table{
+        padding: 1% 2% 2% 2% ;
+    }
+    .flag{
+        
+        width: 5rem;
+        height:1.5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 42% 50%); 
+    }
+    .flag label{
+        padding-left: 45%;
+        vertical-align: middle;
+    }
+    .arrow{
+        vertical-align:sub;
+    }
+    .side-arrow{
+        padding-right: 10%;
+    }
+    .sincearrow{
+        color:#9fa8f0;
+    }
+    .chat{
+        width:370px;
+        height:auto;
+        background-color: white;
+        margin-top: 1.5%;
+        margin-right:2.3% ;
+        padding: 2%;
+        margin-left: 2%;
+    }
+    .tabchat{
+        display:flex;
+        justify-content: space-between;   
+    }
+    .chatbox{
+        clip-path: polygon(0 0, 100% 0, 93% 9%, 94% 100%, 0 100%);
+        background-color:#DFE4F7;
+        padding: 3% 8% 3% 3%;
+        text-align: right;
+        border-radius: 5%;    
+    }
+    .chatboxrev{
+        clip-path: polygon(5% 9%, 0 0, 100% 0, 100% 100%, 5% 100%);
+        background-color: #EDF1F4;
+        padding: 3% 3% 3% 8%;
+        border-radius: 10%;    
+    }
+    .message{
+        display:flex;
+        justify-content: flex-start;
+    }
+    .message2{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+    }
+    .chattext{
+        font-size: 15px;   
+    }
+    .message3{
+        display: flex;
+        justify-content: space-between;
+    }
+   .items{
+    width:90%;
+   }
+   .sincearrow{
+    padding-left: 3%;
+   }
+    
+    @media (max-width:1024px){
+        .main{
+            width:100%;
+        }
+        table{
+            width: 98%;
+        }
+        .chat{
+            width: 90%;
+            margin-top: 2.5%;
+        }
+        .tabchat{
+            display: flex;
+            justify-content: space-between;
+        }
+        .search{
+            width:80%;
+        }
+        .opt2{
+            width:70%;
+        }
+        .boxin{
+            font-size: 20px;
+            padding-top: 0.3%;
+        }
+        .boxin2{
+            display:flex;
+            position: absolute;
+        }
+        
+        .items{
+            width:70%;
+        }
+        .img{
+            width:15%;
+            height:40%;
+            
+        }
+      
+        .flag{
+            width:7rem;
+        }
+        .flag label{
+            font-size: 20px;
+            
+        }
+        .boxrem{
+            margin-left:-25%;
+        }
+        table tr th,td{
+            font-size: 13px;
+        } 
+        
+
+    }
+    @media (max-width:768px){
+        .items{
+            width:60%;
+        }
+        .noti{
+            padding:0% 2% 0% 2%;
+        }
+        .items label{
+            font-size:14px;
+        }
+        .opt2{
+            width:70%;
+        }
+        .tabchat{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .tab{
+            width:100%;
+            margin-right:3%;
+        }
+        .chat{
+            margin-left:4%;
+        }
+        .flag{
+            width:40%;
+        }
+        .flag label{
+            font-size:15px;
+            padding-top:0%;
+        }
+        .boxin{
+            font-size: 15px;
+        }
+      
+    }
+    @media (max-width:425px){
+        .sidebar{
+            display:none;
+        }
+        .search1{
+            display:none;
+        }
+        .opt1{
+            width:20%;
+        }
+        .img{
+            width:16%;
+        }
+        .boxin{
+            font-size: 20px;
+        }
+        .boxin2{
+            font-size:30px;
+        }
+        table tr th,td{
+            font-size: 12px;
+        }
+       
+    }
+
+   
+
+    
