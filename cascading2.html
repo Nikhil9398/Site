@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    main{
+        -webkit-box-shadow: 1px 10px 4px -6px rgba(206,199,191,1);
+-moz-box-shadow: 1px 10px 4px -6px rgba(206,199,191,1);
+box-shadow: 1px 10px 4px -6px rgba(206,199,191,1);
+    }
+    .fruit{
+        width: 100%;
+        
+        
+        /* margin-right: 8%; */
+    }
+    .top{
+        float:left;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .upbox{
+       display:flex;
+       justify-content: flex-start;
+       clear:right;
+       width: 58%;
+       -webkit-box-shadow: 11px 9px 12px -6px rgba(0,0,0,0.4);
+-moz-box-shadow: 11px 9px 12px -6px rgba(0,0,0,0.4);
+box-shadow: 11px 9px 12px -6px rgba(0,0,0,0.4);
+       margin-top: 2%;
+       margin-right:3.2%;
+       /* width:70% */
+      
+    }
+    .del{
+        width:200%;
+        background-image: linear-gradient(#e7f4d6,white);
+    }
+    .username{
+        background-image: linear-gradient(#f7f2db,white);
+        width: 20%;
+    }
+    .tex{
+        text-align: end;
+        padding-right: 5%;
+        font-size: 400%;
+        padding-top: 20%;
+    }
+    .username{
+        width: 75%;
+        padding:4%;
+    }
+    div input{
+        width:97%;
+    }
+    .free{
+        width: 1%;
+    }
+    .tex2{
+        text-align: end;
+        padding-right: 1%;
+        font-size: 200%;
+        
+    }
+    .button{
+        width: 20%;
+        float:right;
+        background-color: #8ea66c;
+        
+    }
+    .tex3{
+        font-size: 100%;
+    }
+    nav label{
+        
+        border-style: dotted none dotted none;
+
+        
+    }
+    nav{
+        background-image: linear-gradient(#f8f8fa,white);
+        padding-top:50px;
+        margin-top: -35px;
+        padding-left: 5%;
+        margin-left: 4%;
+        -webkit-box-shadow: 11px 2px 12px -6px rgba(0,0,0,0.4);
+-moz-box-shadow: 11px 2px 12px -6px rgba(0,0,0,0.4);
+box-shadow: 11px 2px 12px -6px rgba(0,0,0,0.4);
+    }
+    .navhead{
+        font-size: 200%;
+        padding-right: 53%;
+        padding-bottom: 1%;
+        background-color: #f5f9eb;
+        color: #abbf82;
+    }
+   
+    ul{
+        padding-top: 10%;
+        padding-left:0;            /*to remove space created by ul*/
+        display: flex;
+        flex-direction: column ;
+        width:88%;
+        padding-bottom: 1%;
+        
+    }
+    ul li{
+        padding:5% 0% 5% 5%;
+        list-style-type: none;
+        background-image: linear-gradient(white,#f1ecdf);
+        color:#abbf82;
+    }
+    ul li b{
+        font-size: 110%;
+    }
+    .lastgap{
+        clear:right;
+        height: 65px;
+    }
+    .lasthead{
+        
+        color:#86a64d;
+        
+    }
+    .sideflex{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .lastdiv{
+        width:800px;
+        border-bottom: dotted;
+        padding-bottom: 5px;
+        padding-top:25px;
+        
+    }
+    .jan{
+        float:left;
+         width:8.5%;
+         
+    }
+    
+    p{
+        text-align: justify;
+        padding-right:65px;
+    }
+    .lem{
+        width:25%;
+        float:right;
+        padding-right: 65px;
+        padding-left:25px;
+    }
+    .paragr{
+        margin-right: 50px;
+        -webkit-box-shadow: 11px -10px 12px -6px rgba(0,0,0,0.4);
+-moz-box-shadow: 11px -10px 12px -6px rgba(0,0,0,0.4);
+box-shadow: 11px -10px 12px -6px rgba(0,0,0,0.4);
+        padding-left:30px;
+    }
+    .done{
+        background-color:#eeebe6;
+        width:500%;
+        margin-left: -6%;
+    }
+    .done p{
+        font-size:20px;
+        text-align: left;
+    }
+    .further{
+        text-align:right;
+        color:#688b45
+    }
+
+    
+</style>
+<body>
+    <main>
+    <div class="top" >
+        
+        <img class="fruit" src="fru.png" >
+        <nav>
+            <label class="navhead">Navigation</label>
+            <ul>
+                <li><b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>&nbsp;   Home</b></li>
+
+                <li><b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>&nbsp;   Health</b></li>
+
+                <li><b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>&nbsp;   Fruits</b></li>
+
+                <li><b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>&nbsp;   Community</b></li>
+
+                <li><b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>&nbsp;   About us</b></li>
+            </ul>
+            
+        </nav>
+        <div class="done"  >
+            <p>Done</p>
+        </div>
+        
+    </div>
+    <div class="upbox" style="float:right">
+        <label class="del" >
+            <h1 class="tex" ><label style="color:#87a448"><i>Delicious</i></label> <label style="color:#604140"><i>Fruit</i></label></h1>
+            <h3 class="tex2" style="color:#c08d49"><i>Tastes like heaven</i></h3>
+        </label>
+        <label class="free">
+
+        </label>
+        <label class="username">
+            <label class="tex3" style="color:#a4847d">
+                <label>Welcome, Guest. Please login <br> or </label><span style="color:#8ea66c">register.</span>
+            </label>
+            <div style="color:#8ea66c">
+               <br> <i>Username</i>
+            </div>
+            <div>
+                <input type="text" >
+            </div>
+            <div style="color:#8ea66c">
+                <i>Password</i>
+            </div>
+            <div>
+                <input type="text">
+            </div>
+            <div class="B">
+                <br><input class="button" type="submit" value="login">
+            </div>
+        </label>
+        
+    </div>
+    <div class="lastgap">
+        
+    </div>
+    <div class="sideflex">
+    <div style="width:60px">
+      
+    </div>
+
+
+    <div class="paragr">
+
+    <div class="lastdiv">
+        <img src="jan.png" class="jan">
+        <label class="lasthead"><h1><br>&emsp;&emsp;<i>Lorem ipsum sample text</i></h1></label>
+       
+    </div>
+
+    <div>
+        <br><br>
+        <img src="lem.png" class="lem">
+        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, dolores beatae, laboriosam aperiam eius hic nemo minus 
+            quia accusantium nam, modi delectus. Nesciunt officiis expedita facere modi, ipsam consectetur consequuntur? Lorem ipsum
+             dolor sit amet, consectetur adipisicing elit. Velit pariatur cum vero, ducimus fugiat voluptatem, necessitatibus 
+             inventore error delectus excepturi, quo quos. Porro, mollitia? Vel, eius quisquam. Excepturi, atque totam.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt quasi suscipit, temporibus maiores fugit quasi
+             ut recusandae iste! Consectetur veritatis praesentium, eveniet veniam repudiandae minus vitae placeat sint nihil?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ipsam ab reiciendis, quidem ipsum, velit possimus natus cum 
+            culpa voluptatem dolorum ullam facere impedit, esse consequuntur. Molestiae quo ea suscipit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, rerum saepe. Quisquam inventore esse odio doloremque! Aspernatur 
+        assumenda impedit, quidem aut, soluta quo eum enim omnis ea doloremque quod sint! Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Rem reiciendis laborum similique, sint earum optio aut porro ullam vero quo voluptatem minus molestiae nisi enim esse, fugiat nobis doloribus
+         magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime corporis explicabo. Ut, explicabo? Beatae consequuntur aperiam 
+         voluptatibus ratione deleniti, earum aut. Fugiat alias facere dolor iure maiores porro quaerat. Lorem ipsum dolor sit amet consectetur 
+         adipisicing elit. Similique at impedit cupiditate corrupti provident esse blanditiis assumenda eum necessitatibus unde, fugit ducimus
+          officiis inventore non pariatur ex eos exercitationem expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero praesentium 
+          error quisquam odit, atque corrupti possimus voluptate sapiente, exercitationem, recusandae dolorum debitis consequuntur saepe obcaecati repellendus
+           dolores aperiam eum doloremque.</p>
+       <br>
+       <br>
+        <p class="further">>> <i><b>Further reading</b></i></p>
+        <br>
+        <br>
+    </div>
+
+    </div>
+    </div>
+
+
+   
+    </main>
+
+    
+    
+</body>
+</html>
