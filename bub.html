@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nik1">
+        <button >nik1</button>
+        <div id="nik2">
+            <button >nik2</button>
+            <div id="nik3">
+                <button >nik3</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function nik1(e){
+        e.target.style.backgroundColor="red";
+        e.stopPropagation();
+      }
+      function nik2(e){
+        e.target.style.backgroundColor="yellow";
+        e.stopPropagation();
+      }
+      function nik3(e){
+        e.target.style.backgroundColor="blue";
+        e.stopPropagation();
+      }
+
+       document.getElementById("nik1").onclick=nik1;
+       document.getElementById("nik2").onclick=nik2;
+       document.getElementById("nik3").onclick=nik3;
+    </script>
+</body>
+</html>
