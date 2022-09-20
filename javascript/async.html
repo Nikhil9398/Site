@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     function nik1(){
+    //         console.log("nikkkkkkkk")
+    //     }
+    //     async function nik(){
+    //     console.log("nik");
+    //     await setTimeout(nik1,2000);
+    // }
+    // nik();
+    
+   function m(){
+    setTimeout(()=>{
+            console.log("");
+        },1000);
+   }
+    function n1(){
+        console.log("1");
+        m;
+    }
+    function n2(){
+        console.log("2");
+    }
+    function n3(){
+        console.log("3");
+    }
+    async function nn(){
+        res = await Promise.all(
+            [
+                n1(),n2(),n3()
+            ]
+        )
+    }
+    nn();
+    </script>
+</body>
+</html>

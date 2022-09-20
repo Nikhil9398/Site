@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function delay(){
+        //     const promise = new Promise((resolve,reject)=>{
+        //         setTimeout(()=>resolve()
+        //         ,3000);
+        //     });
+        //     return promise;
+           
+        //}
+        // delay(function(){
+        //     console.log("first");
+        //     delay(function(){
+        //         console.log("second");
+        //         delay(function(){
+        //             console.log("third");
+        //         });
+        //     });
+        // });
+
+        // delay().then(function(){
+        //     console.log("first");
+        // }).then(()=>delay()).then(function(){
+        //     console.log("second");
+        // });
+        // async function exe(){
+        //     await delay();
+        //     console.log("hi");
+        //     await delay();
+        //     console.log("second");
+        //     await delay()
+        //     console.log("third");
+        // }
+        // exe();
+
+
+        // async function A(){
+        //     console.log("a");
+        //     const promise = new Promise((res,rej)=>{
+        //         if(true){
+        //         setTimeout(res,5000);}
+                
+        //     });
+        //     await promise.then(()=>
+        //     {
+        //         B();
+        //     });
+        //     C();
+        // }
+        // function B(){
+        //     console.log("b");
+        // }
+        // function C(){
+        //     console.log("c");
+        // }
+        // A();
+        // function cccc(callback){
+        //  callback;
+        // }
+        // cccc(()=>{
+        //     console.log("hello");
+            
+        // });
+        
+        // function my(){
+        //     console.log("hello");
+        // }
+        // function my2(){
+        //     console.log("hello2");
+        // }
+        
+
+        // function my(callback){
+        //     setTimeout(()=>{
+        //      console.log("1");
+        //     },2000)
+        //     callback();
+        // }
+        // function my2(){
+        //     console.log("2");
+        // }
+        // my(my2);
+
+
+
+        function my(){
+            return function(){
+            console.log("osdjnbods");
+            }
+        }
+        setTimeout(my(),5000);
+
+        
+    </script>
+</body>
+</html>

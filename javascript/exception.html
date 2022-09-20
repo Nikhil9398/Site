@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var t=0;
+        // if(t===0){
+        //     throw new RangeError("t value is 0");
+        // }
+
+        // try{
+        //     var c = sum(a,b);
+        // }
+        // catch(e){
+        //    console.log(e);
+        // }
+        // finally{
+        //     console.log("this is final");
+        // }
+
+        // function nik(){
+        //     setTimeout(function(){
+        //         throw new Error("new error");
+        //     },1000);
+        // }
+        // try{
+        //     nik();
+        // }
+        // catch(e){
+        //     console.log(e);
+        // }
+        // finally{
+        //     console.log("iiiii");
+        // }
+        
+
+        function my(){
+            throw "iiiiiii";
+        }
+        const promise = new Promise((res,rej)=>{
+            my();
+        });
+        promise.then(()=>{
+            console.log("jjj");
+        }).catch(()=>{
+            console.log("errr");
+        });
+    </script>
+</body>
+</html>

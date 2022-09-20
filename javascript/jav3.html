@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function nik(e){
+            e.target.style.backgroundColor='red';
+            e.preventDefault();
+
+                        
+         }
+         function nik1(e1){
+            e1.target.style.backgroundColor='yellow';
+        
+         }
+         function nik2(e3){
+            e3.target.style.backgroundColor='blue';
+            e3.stopImmediatePropagation();
+            
+         }
+         window.addEventListener('load', function(){
+            document.getElementById("out").addEventListener('click',nik1);
+            document.getElementById("sout").addEventListener('click',nik2);
+            // document.getElementById("out").onclick=nik1;
+            // document.getElementById("sout").onclick=nik2;
+            // document.getElementById("in").onclick=nik;
+            document.getElementById("in").addEventListener('click',nik);
+         })
+    </script>
+</head>
+
+<body>
+    <div id="out">
+        <button id="btn1">one</button>
+        <div id="sout">
+            <button id="btn2">two</button>
+            <div id="in">
+                 <button id="btn3">three</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
