@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+}
+  ul{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  ul li{
+    list-style: none;
+  }
+  li{
+    margin: 0px 5px;
+    float:left;
+    line-height: 75px;
+    
+  }
+  ul li>a:link{
+    color:black;
+  }
+  ul li>a:hover{
+    color:white;
+  }
+  .second{
+    background-color: black;
+    
+  }
+  .seone{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #C0C0C0;
+  }
+  .setwo{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+  }
+  .allu{
+    height:350px;
+    margin-top: 25px;
+    margin-left: 40px;
+    float:left; 
+    margin-right: 150px;
+  }
+  .age{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+  .age label{
+    line-height: 25px;
+  }
+  .fifth{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-right:40px;
+    padding: 20px 20px 20px 20px;
+    gap: 1rem;
+  }
+  .per{
+    background-color: white;
+  }
+  .menubar{
+    background-color:#F1C40F; 
+    box-sizing: border-box;
+  }
+  .menulist{
+    font-size:15px;
+  }
+  .menulist a{
+    text-decoration:none;
+  }
+  .intro{
+    text-align:justify; 
+    margin-right: 20px;
+  }
+  .resume{
+    text-align: center;
+    margin-left:7%;
+    width: 16%; 
+    padding:7px; 
+    font-size:25px;
+    background-color: #F1C40F;
+    border-radius: 20px;
+  }
+  .skill{
+    font-size:40px;
+    margin-left:500px; 
+    border-style: solid;
+  }
+  .subword{
+    line-height: 30px;
+  }
+  .yelper{
+    background-color:#F1C40F;
+  }
