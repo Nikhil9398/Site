@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+input[type=checkbox]:checked + .ele{
+     text-decoration: line-through;
+     color:grey;
+}
+li{
+    list-style: none;
+}
+</style>
+<body>
+    <h1>A simple todo app using express</h1>
+    <form method="post" action="/act">
+        <input type="text" name="caption">
+        <button>submit</button>
+   
+    <h2>Added Task</h2>
+    <% for(var i=0;i < task.length; i++){ %>
+        <li><input type="checkbox" name="check" value="<%=task[i]%>"> <span class="ele"><%=task[i] %></span></li>
+        <%}%>
+        <button formaction="/removetask" >remove</button>
+
+    </form>
+    
+    <h2>Completed Task</h2>
+    <% for(var i=0;i<complete.length; i++){ %>
+        <form method="post" action="/del/<%=i%>">
+        <li><input type="checkbox" class="check" name="che" value="<%=complete[i]%>" checked><%=complete[i]%><button>X</button></li>
+        </form>
+    <%}%>
+   
+    
+</body>
+</html>
