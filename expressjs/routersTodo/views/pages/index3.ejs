@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A todo using Express</h1>
+    <form method="post" action="/add">
+        <input type="text" name="caption">
+        <button>submit</button>
+        <% for(var i=0;i<task.length;i++){ %>
+             <form action="/add" method="post"> <li ><span ><%=task[i]%></span><input type="hidden" name="del" value="<%= i %>"><button>X</button></li></form>
+       <%}%>
+    </form>
+</body>
+</html>
