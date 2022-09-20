@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .center{
+        
+        background-color: #F2F3F7;
+    }
+    .reg{
+        text-align: center;
+        padding-left: 20%;
+        font-size: 20px;
+    }
+    h1{
+        padding-left:24%;
+
+    }
+    td{
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
+    .sub{
+        margin-left: 40%;
+    }
+    .full{
+       display: grid;
+       grid-template-columns: 33% 33% 33%;
+    }
+    .dfull{
+        display:grid;
+        grid-template-columns: 22% 60% 18%;
+    }
+    .row li{
+        width: 20%;
+    }
+   
+    .restable{
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    
+</style>
+<body>
+    <div class="full">
+    <div class="left">
+
+    </div>
+    <div class="center">
+    <h1>Registration form</h1><br><br>
+    <form method="post" action="/add">
+        <table class="reg">
+            <tr><td>Name  :</td><td><input type="text" name="name"></td></tr>
+            <tr><td>Email  :</td><td><input type="text" name="email"></td></tr>
+            <tr><td>Phone  :</td><td><input type="text" name="phone"></td></tr>
+            <tr><td>Address:</td><td><input type="text" name="address"></td></tr>
+            
+        </table>
+        <br>
+        <br>
+        <button class="sub">submit</button>
+        <br>
+        <br>
+        <br>
+    </form>
+    </div>
+    <div class="right">
+
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="dfull">
+        <div class="dleft"></div>
+        <div class="dcenter">
+            
+     <table class="restable">       
+    <%if(typeof task !== 'undefined'){%>
+        <%if(task.length>0){%>
+            <tr >
+                <label class="row">
+                <td><b>Name</b></td>
+                <td><b>email</b></td>
+                <td><b>Phone</b></td>
+                <td><b>Address</b></td>
+                <td><b>Edit</b></td>
+                <td><b>Delete</b></td>
+                </label>
+            </tr> 
+        <%}%>
+        
+        <%for(var i=0;i<task.length;i++){%>
+           
+                <tr >
+                    <label class="row">
+                    <td><%=task[i].name%></td>&emsp;
+                    <td><%=task[i].email%></td>&emsp;
+                    <td><%=task[i].phone%></td>&emsp;
+                    <td><%=task[i].address%></td>&emsp;
+                    <td>
+                        <form action="/del/<%=task[i]._id%>" method="post">
+                            <button>delete</button>
+            
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/update/<%=task[i]._id%>" method="post">
+                            <button>update</button>
+                            <input type="hidden" name="i" value="<%=task[i].name%>">
+                            <input type="hidden" name="j" value="<%=task[i].email%>">
+                            <input type="hidden" name="k" value="<%=task[i].phone%>">
+                            <input type="hidden" name="l" value="<%=task[i].address%>">
+                        </form>
+                    </td>
+                </label>
+                </tr><br>
+            
+        <%}%>
+    <%}%>
+     </table>
+   </div>
+   <div class="dright"></div>
+    </div>
+    
+</body>
+</html>
