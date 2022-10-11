@@ -1,19 +1,21 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "server1",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.1",
+    "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "mongodb": "^4.10.0",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
     "mongoose": "^6.6.5",
+    "morgan": "~1.9.1",
+    "node-fetch": "^3.2.10",
     "nodemon": "^2.0.20"
   }
 }
