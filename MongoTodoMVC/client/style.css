@@ -1,0 +1,11 @@
+@media (max-width:640px){
+    .input{
+        width: 90%;
+    }
+    .list2{
+        width:90%;
+    }
+    .down{
+        width: 90%;
+    }
+}

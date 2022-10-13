@@ -34,7 +34,7 @@ exports.toggle=async (req,res,next)=>{
         var id = new mongo.ObjectId(req.params.id)
         var isCompleted = req.body.checked
         // console.log(isCompleted);
-       // isCompleted = !isCompleted;
+        //isCompleted = !isCompleted;
         const data = await todos.findByIdAndUpdate(id,{isCompleted},{new:true})
         console.log(data);
         res.status(200).json(data)
