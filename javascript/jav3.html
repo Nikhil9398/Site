@@ -7,23 +7,29 @@
     <title>Document</title>
     <script>
          function nik(e){
-            e.target.style.backgroundColor='red';
-            e.preventDefault();
+           // alert("inner child")
+            e.currentTarget.style.background = "red"
+            
+            
 
                         
          }
          function nik1(e1){
-            e1.target.style.backgroundColor='yellow';
+            //alert("parent")
+            e1.target.style.background = "blue"
+            //e1.stopImmediatePropagation()
         
          }
          function nik2(e3){
-            e3.target.style.backgroundColor='blue';
-            e3.stopImmediatePropagation();
+            //alert("child")
+            e3.target.style.background = "yellow"
+            
             
          }
          window.addEventListener('load', function(){
             document.getElementById("out").addEventListener('click',nik1);
-            document.getElementById("sout").addEventListener('click',nik2);
+            document.getElementById("out").addEventListener('click',nik2)
+            document.getElementById("sout").addEventListener('click',nik);
             // document.getElementById("out").onclick=nik1;
             // document.getElementById("sout").onclick=nik2;
             // document.getElementById("in").onclick=nik;

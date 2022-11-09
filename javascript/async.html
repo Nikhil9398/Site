@@ -8,38 +8,101 @@
 </head>
 <body>
     <script>
-    //     function nik1(){
-    //         console.log("nikkkkkkkk")
-    //     }
-    //     async function nik(){
-    //     console.log("nik");
-    //     await setTimeout(nik1,2000);
-    // }
-    // nik();
+        function nik1(){
+   
+        return new Promise((res,rej)=>{
+           
+                //setTimeout(res,1000)
+                
+           res()
+            console.log("nik")
+            
+        })
+        
+        
+            
+        }
+        function nik2(){
+            return new Promise((res,rej)=>{
+           setTimeout( res,1000)
+
+           console.log("nik2")
+            
+        })
+        }
+        function nik3(){
+            return new Promise((res,rej)=>{
+                res()
+            console.log("nik3")
+        })
+        }
+       async function n(){
+        await nik1()
+        await nik2()
+        await nik3()
+       }
+       n()
+       
+       
+//    function m(){
+//     setTimeout(()=>{
+//             console.log("");
+//         },1000);
+//    }
+//     function n1(){
+//         console.log("1");
+//         m;
+//     }
+//     function n2(){
+//         console.log("2");
+//     }
+//     function n3(){
+//         console.log("3");
+//     }
+//     async function nn(){
+//         res = await Promise.all(
+//             [
+//                 n1(),n2(),n3()
+//             ]
+//         )
+//     }
+//     nn();
+
+// let promise = new Promise((res,rej)=>{
+//     console.log("nik")
+//     res()
     
-   function m(){
-    setTimeout(()=>{
-            console.log("");
-        },1000);
-   }
-    function n1(){
-        console.log("1");
-        m;
-    }
-    function n2(){
-        console.log("2");
-    }
-    function n3(){
-        console.log("3");
-    }
-    async function nn(){
-        res = await Promise.all(
-            [
-                n1(),n2(),n3()
-            ]
-        )
-    }
-    nn();
+    
+// })
+// promise.then(function(){
+//     console.log("nik1")
+// })
+// promise.then(function(){
+//     console.log("nik2")
+// })
+// console.log("nik2.5")
+// promise.then(function(){
+//     console.log("nik3")
+// })
+// promise.catch(function(){
+//     console.log("nik kadu")
+// })
+// function n(){
+//     console.log("nikvar")
+// }
+
+// async function nik(){
+//    console.log("nik")
+//     setTimeout(()=>{
+//     console.log("m")
+    
+//    },1000) 
+   
+//    await n()
+// }
+// nik()
+
+
     </script>
 </body>
 </html>

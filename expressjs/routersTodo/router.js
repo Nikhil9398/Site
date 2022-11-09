@@ -6,3 +6,6 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.set("view engine","ejs")
 app.use('/',things)
 app.listen(3000)
+
+
+

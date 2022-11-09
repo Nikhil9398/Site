@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style >
+   .line{
+    float:left;
+   }
+  
+    
+</style>
+<body>
+    <div>Hello world</div>
+    <br>
+    <div>
+        <h1 class="heading">Welcome in Geekyants</h1>
+        <p>We're a design and development studio that specializes in building solutions for web and mobile that drive innovation and transform industries and lives.</p>
+    </div>
+    <div>
+        <h1 id="header">Registration Form</h1>
+        <form>
+            <table>
+        <tr><td>User id:</td>
+        <td><input type = "text" minlength="5" maxlength="12" required></td></tr>
+        <tr><td>Password:</td>&emsp;<td><input type = "password" minlength="7" maxlength="12" required></td></tr>
+        <tr><td>Name:</label>&emsp;</td><input type = "text" pattern="[A-Za-z]{1,}" required></label>
+        <label>Address:</label>&emsp;<label><input type="text"></label>
+        <label>Country:</label>&emsp;<label><select required><option disabled selected value="">(Please Select a country)</option> <option>India</option><option>USA</option><option>Srilanka</option><option>Germany</option></select></label>
+        <label>Zip Code:</label>&emsp;<label><input type="number" required></label>
+        <label>Email:</label>&emsp;<label><input type="email" required></label>
+        <label>Sex:</label>&emsp;<label><input type="radio" name="gen" required><label >Male</label><input type="radio" name="gen"><label >Female</label></label>
+        <label >Language:</label>&emsp;<label><input type="checkbox" required><label>English</label><input type = "checkbox"><label>Non English</label></label>
+        <label class="line">About:</label>
+        <label><textarea rows="5" cols="20"></textarea></label>
+        <label><input type="submit"></label>
+        </table>
+        </form>
+    </div>
+    
+</body>
+</html>

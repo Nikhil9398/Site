@@ -17,16 +17,16 @@ exports.getTodos= async (req,res,next)=>{
     
 }
 exports.addTodos=async (req,res,next)=>{
+
+    const text = req.body.ele
+    var add = new todos({text:text,isCompleted:false})
     try{
-        const text = req.body.ele
-        console.log(text)
-        const add = new todos({text:text,isCompleted:false})
-        const save = await add.save()
-        res.status(200).json(add);
+        await add.save()
     }
     catch(err){
         next(err)
     }
+    res.status(200).json(add);
     
 }
 exports.toggle=async (req,res,next)=>{

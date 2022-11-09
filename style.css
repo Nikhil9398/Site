@@ -1,0 +1,30 @@
+h1:last-child {
+    color:blue;
+}
+
+
+
+
+
+<label class="username">
+<label class="tex3">
+    Welcome, Guest. Please login <br> or <span>register.</span>
+</label>
+<div>
+   <br> Username
+</div>
+<div>
+    <input type="text" >
+</div>
+<div>
+    Password
+</div>
+<div>
+    <input type="text">
+</div>
+<div class="B">
+    <br><input class="button" type="submit" value="login">
+</div>
+</label>
+
+
